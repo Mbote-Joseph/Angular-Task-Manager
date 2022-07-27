@@ -20,6 +20,10 @@ h3 {
 
 .card {
   max-width: 600px;
+  background-image: url("../../../assets/images/task.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .incomplete {
   margin-left: 30%;
