@@ -17,5 +17,7 @@ export interface ITask {
   title: string;
   description: string;
   completed: boolean;
-  status: string;
+  upcoming: boolean;
+  complete: boolean;
+  incomplete: boolean;
 }
