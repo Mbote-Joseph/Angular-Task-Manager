@@ -1,8 +1,19 @@
 <nav>
   <h3>Angular Task Manager</h3>
+
   <ul>
     <li><a routerLink="/">Home</a></li>
     <li><a routerLink="/tasks">Tasks</a></li>
     <li><a routerLink="/about">About</a></li>
+    <button type="button" class="btn btn-primary position-relative">
+      Inbox
+      <span
+        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      >
+        <span *ngIf="messages <= 99">{{ messages }}</span>
+        <span *ngIf="messages > 99">99+</span>
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </button>
   </ul>
 </nav>
