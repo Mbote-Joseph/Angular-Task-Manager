@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
   messages = 15;
 
+  start() {
+    this.messages = this.messages + 2;
+  }
+
   constructor() {}
 
   ngOnInit(): void {}
