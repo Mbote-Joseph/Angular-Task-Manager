@@ -10,6 +10,7 @@ export class NavComponent implements OnInit {
 
   start() {
     this.messages = this.messages + 2;
+    console.log(this.messages);
   }
 
   constructor() {}
