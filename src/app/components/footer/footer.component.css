@@ -21,9 +21,10 @@ footer {
   padding: 20px;
   align-items: center;
   color: #fff;
-  position: absolute;
+  margin-top: 30px;
+  /* position: absolute;
   bottom: 0%;
-  width: 100%;
+  width: 100%; */
 }
 
 p {
