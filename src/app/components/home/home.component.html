@@ -3,14 +3,13 @@
     <!-- Column 1 -->
 
     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+      <div>
+        <h3>Upcoming Tasks</h3>
+      </div>
       <div *ngFor="let task of tasks">
         <div *ngIf="task.upcoming">
-          <h3>Upcoming Tasks</h3>
-        </div>
-
-        <div *ngIf="task.upcoming">
           <!-- Card -->
-          <div class="card">
+          <div class="card" style="margin-top: 10px">
             <div class="card-header">{{ task.title }}</div>
             <div class="card-body">
               <h5 class="card-title">{{ task.description }}</h5>
@@ -23,15 +22,14 @@
     <!-- Column 2 -->
 
     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+      <div>
+        <h3>Complete Tasks</h3>
+      </div>
       <div *ngFor="let task of tasks">
-        <div *ngIf="task.complete">
-          <h3>Complete Tasks</h3>
-        </div>
-
         <div *ngIf="task.complete">
           <!-- Card -->
 
-          <div class="card">
+          <div class="card" style="margin-top: 10px">
             <div class="card-header">{{ task.title }}</div>
             <div class="card-body">
               <h5 class="card-title">{{ task.description }}</h5>
@@ -43,19 +41,18 @@
     </div>
   </div>
 
-  <div class="row" *ngFor="let task of tasks">
-    <div class="incomplete" *ngIf="task.incomplete">
-      <h3>Incomplete Tasks</h3>
-    </div>
+  <div class="incomplete">
+    <h3>Incomplete Tasks</h3>
+    <div class="row" *ngFor="let task of tasks">
+      <div *ngIf="task.incomplete">
+        <!-- Card -->
 
-    <div class="incomplete" *ngIf="task.incomplete">
-      <!-- Card -->
-
-      <div class="card">
-        <div class="card-header">{{ task.title }}</div>
-        <div class="card-body">
-          <h5 class="card-title">{{ task.description }}</h5>
-          <a href="#" class="btn btn-danger">View</a>
+        <div class="card" style="margin-top: 10px">
+          <div class="card-header">{{ task.title }}</div>
+          <div class="card-body">
+            <h5 class="card-title">{{ task.description }}</h5>
+            <a href="#" class="btn btn-danger">View</a>
+          </div>
         </div>
       </div>
     </div>
