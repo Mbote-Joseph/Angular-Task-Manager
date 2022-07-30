@@ -18,6 +18,5 @@ export interface ITask {
   description: string;
   completed: boolean;
   upcoming: boolean;
-  complete: boolean;
   incomplete: boolean;
 }

@@ -14,7 +14,6 @@ export class HomeComponent implements OnInit {
       description: 'Task 1 description',
       completed: false,
       upcoming: false,
-      complete: false,
       incomplete: true,
     },
     {
@@ -23,17 +22,23 @@ export class HomeComponent implements OnInit {
       description: 'Task 2 description',
       completed: false,
       upcoming: true,
-      complete: true,
       incomplete: true,
     },
     {
       id: 3,
       title: 'Task 3',
       description: 'Task 3 description',
+      completed: true,
+      upcoming: false,
+      incomplete: false,
+    },
+    {
+      id: 4,
+      title: 'Task 4',
+      description: 'Task 4 description',
       completed: false,
       upcoming: false,
-      complete: true,
-      incomplete: false,
+      incomplete: true,
     },
   ];
 
