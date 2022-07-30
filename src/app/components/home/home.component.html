@@ -2,27 +2,30 @@
   <div class="row" *ngFor="let task of tasks">
     <!-- Column 1 -->
 
-    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-      <h3>Upcoming Tasks</h3>
-      <!-- Card -->
-      <div class="card" *ngIf="task.upcoming">
-        <div class="card-header">{{ task.title }}</div>
-        <div class="card-body">
-          <h5 class="card-title">{{ task.description }}</h5>
-          <a href="#" class="btn btn-success">View</a>
+    <div *ngIf="task.upcoming">
+      <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+        <h3>Upcoming Tasks</h3>
+        <!-- Card -->
+        <div class="card">
+          <div class="card-header">{{ task.title }}</div>
+          <div class="card-body">
+            <h5 class="card-title">{{ task.description }}</h5>
+            <a href="#" class="btn btn-success">View</a>
+          </div>
         </div>
       </div>
     </div>
-
     <!-- Column 2 -->
-    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-      <!-- Card -->
-      <h3>Complete Tasks</h3>
-      <div class="card" *ngIf="task.completed">
-        <div class="card-header">{{ task.title }}</div>
-        <div class="card-body">
-          <h5 class="card-title">{{ task.description }}</h5>
-          <a href="#" class="btn btn-primary">View</a>
+    <div *ngIf="task.completed">
+      <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+        <!-- Card -->
+        <h3>Complete Tasks</h3>
+        <div class="card">
+          <div class="card-header">{{ task.title }}</div>
+          <div class="card-body">
+            <h5 class="card-title">{{ task.description }}</h5>
+            <a href="#" class="btn btn-primary">View</a>
+          </div>
         </div>
       </div>
     </div>

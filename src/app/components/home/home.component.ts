@@ -17,24 +17,24 @@ export class HomeComponent implements OnInit {
       complete: false,
       incomplete: true,
     },
-    // {
-    //   id: 2,
-    //   title: 'Task 2',
-    //   description: 'Task 2 description',
-    //   completed: false,
-    //   upcoming: false,
-    //   complete: false,
-    //   incomplete: true,
-    // },
-    // {
-    //   id: 3,
-    //   title: 'Task 3',
-    //   description: 'Task 3 description',
-    //   completed: false,
-    //   upcoming: false,
-    //   complete: false,
-    //   incomplete: true,
-    // },
+    {
+      id: 2,
+      title: 'Task 2',
+      description: 'Task 2 description',
+      completed: false,
+      upcoming: false,
+      complete: false,
+      incomplete: true,
+    },
+    {
+      id: 3,
+      title: 'Task 3',
+      description: 'Task 3 description',
+      completed: false,
+      upcoming: false,
+      complete: false,
+      incomplete: true,
+    },
   ];
 
   constructor() {}
