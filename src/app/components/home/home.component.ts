@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ITask } from 'src/app/shared/task';
+import { TaskService } from 'src/app/shared/task.service';
 
 @Component({
   selector: 'app-home',
@@ -42,7 +43,7 @@ export class HomeComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor(private taskService: TaskService) {}
 
   ngOnInit(): void {}
 }
