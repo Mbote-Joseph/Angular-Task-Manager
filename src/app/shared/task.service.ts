@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ITask } from './task';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class TaskService {
-  url: string = 'http://localhost:3000/tasks';
+  url: string = 'http://localhost:3000/task';
   constructor(private http: HttpClient) {}
 
-  getTasks() {
-    return this.http.get(this.url);
+  getTasks(): Observable<ITask[]> {
+    return this.http.get<ITask[]>(this.url);
   }
 
   getTask(id: number) {

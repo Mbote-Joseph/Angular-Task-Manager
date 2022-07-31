@@ -8,42 +8,17 @@ import { TaskService } from 'src/app/shared/task.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  tasks: ITask[] = [
-    {
-      id: 1,
-      title: 'Task 1',
-      description: 'Task 1 description',
-      completed: false,
-      upcoming: false,
-      incomplete: true,
-    },
-    {
-      id: 2,
-      title: 'Task 2',
-      description: 'Task 2 description',
-      completed: false,
-      upcoming: true,
-      incomplete: true,
-    },
-    {
-      id: 3,
-      title: 'Task 3',
-      description: 'Task 3 description',
-      completed: true,
-      upcoming: false,
-      incomplete: false,
-    },
-    {
-      id: 4,
-      title: 'Task 4',
-      description: 'Task 4 description',
-      completed: false,
-      upcoming: false,
-      incomplete: true,
-    },
-  ];
+  tasks: ITask[] = [];
 
   constructor(private taskService: TaskService) {}
 
-  ngOnInit(): void {}
+  getTasks() {
+    this.taskService.getTasks().subscribe((tasks) => {
+      this.tasks = tasks;
+    });
+  }
+
+  ngOnInit(): void {
+    this.getTasks();
+  }
 }
