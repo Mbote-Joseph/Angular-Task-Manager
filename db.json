@@ -38,8 +38,8 @@
       "title": "Task 3",
       "description": "Task 3 description",
       "completed": false,
-      "upcoming": false,
-      "incomplete": true
+      "upcoming": true,
+      "incomplete": false
     },
     {
       "id": 4,
@@ -53,33 +53,33 @@
       "id": 5,
       "title": "Task 5",
       "description": "Task 5 description",
-      "completed": false,
+      "completed": true,
       "upcoming": false,
-      "incomplete": true
+      "incomplete": false
     },
     {
       "id": 6,
       "title": "Task 6",
       "description": "Task 6 description",
       "completed": false,
-      "upcoming": false,
-      "incomplete": true
+      "upcoming": true,
+      "incomplete": false
     },
     {
       "id": 7,
       "title": "Task 7",
       "description": "Task 7 description",
       "completed": false,
-      "upcoming": false,
-      "incomplete": true
+      "upcoming": true,
+      "incomplete": false
     },
     {
       "id": 8,
       "title": "Task 8",
       "description": "Task 8 description",
-      "completed": false,
+      "completed": true,
       "upcoming": false,
-      "incomplete": true
+      "incomplete": false
     },
     {
       "id": 9,
