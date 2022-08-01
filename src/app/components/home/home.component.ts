@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  completeTask(id: number) {
-    this.taskService.updateTask(id).subscribe((task) => {
+  completeTask(id: number, task: ITask): void {
+    this.taskService.updateTask(id, task).subscribe((task) => {
       this.tasks = this.tasks.map((task) => {
         if (task.id === id) {
           task.completed = true;
