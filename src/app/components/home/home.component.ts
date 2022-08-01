@@ -18,6 +18,19 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  completeTask(id: number) {
+    this.taskService.completeTask(id).subscribe((task) => {
+      this.tasks = this.tasks.map((task) => {
+        if (task.id === id) {
+          task.completed = true;
+          task.incomplete = false;
+          task.upcoming = false;
+        }
+        return task;
+      });
+    });
+  }
+
   ngOnInit(): void {
     this.getTasks();
   }
