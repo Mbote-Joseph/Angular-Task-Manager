@@ -38,7 +38,9 @@
             <div class="card-header">{{ task.title }}</div>
             <div class="card-body">
               <h5 class="card-title">{{ task.description }}</h5>
-              <a href="#" class="btn btn-primary">Mark Upcoming</a>
+              <a (click)="upcomingTask(task.id, task)" class="btn btn-primary"
+                >Mark Upcoming</a
+              >
             </div>
           </div>
         </div>
