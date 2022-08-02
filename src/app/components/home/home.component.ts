@@ -31,6 +31,19 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  incompleteTask(id: number, task: ITask): void {
+    this.taskService.updateTask(id, task).subscribe((task) => {
+      this.tasks = this.tasks.map((task) => {
+        if (task.id === id) {
+          task.completed = false;
+          task.incomplete = true;
+          task.upcoming = false;
+        }
+        return task;
+      });
+    });
+  }
+
   ngOnInit(): void {
     this.getTasks();
   }
