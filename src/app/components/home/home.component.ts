@@ -57,6 +57,12 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  deleteTask(id: number): void {
+    this.taskService.deleteTask(id).subscribe((task) => {
+      this.tasks = this.tasks.filter((task) => task.id !== id);
+    });
+  }
+
   ngOnInit(): void {
     this.getTasks();
   }
