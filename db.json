@@ -22,8 +22,8 @@
       "title": "Task 1",
       "description": "Task 1 description",
       "completed": false,
-      "upcoming": false,
-      "incomplete": true
+      "upcoming": true,
+      "incomplete": false
     },
     {
       "id": 2,
