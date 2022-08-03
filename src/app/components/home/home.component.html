@@ -18,7 +18,7 @@
             <div class="card-body">
               <h5 class="card-title">{{ task.description }}</h5>
               <a href="#" class="btn btn-success">View</a>
-              <a href="#" class="btn btn-danger">Delete</a>
+              <a (click)="deleteTask(task.id)" class="btn btn-danger">Delete</a>
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@
             <a (click)="upcomingTask(task.id, task)" class="btn btn-primary"
               >Mark Upcoming</a
             >
-            <a href="#" class="btn btn-danger">View</a>
+            <a (click)="deleteTask(task.id)" class="btn btn-danger">Delete</a>
           </div>
         </div>
       </div>

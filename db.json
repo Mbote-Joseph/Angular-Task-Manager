@@ -18,14 +18,6 @@
   },
   "task": [
     {
-      "id": 1,
-      "title": "Task 1",
-      "description": "Task 1 description",
-      "completed": false,
-      "upcoming": true,
-      "incomplete": false
-    },
-    {
       "id": 2,
       "title": "Task 2",
       "description": "Task 2 description",
@@ -48,14 +40,6 @@
       "completed": false,
       "upcoming": false,
       "incomplete": true
-    },
-    {
-      "id": 5,
-      "title": "Task 5",
-      "description": "Task 5 description",
-      "completed": true,
-      "upcoming": false,
-      "incomplete": false
     },
     {
       "id": 6,
