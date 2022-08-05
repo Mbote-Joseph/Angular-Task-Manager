@@ -41,4 +41,8 @@ export class TaskService {
   upcomingTask(id: number) {
     return this.http.put(`${this.url}/${id}/upcoming`, {});
   }
+
+  getTasksByUser(id: number) {
+    return this.http.get(`${this.url}/user/${id}`);
+  }
 }
