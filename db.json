@@ -18,14 +18,6 @@
   },
   "task": [
     {
-      "id": 2,
-      "title": "Task 2",
-      "description": "Task 2 description",
-      "completed": false,
-      "upcoming": false,
-      "incomplete": true
-    },
-    {
       "id": 3,
       "title": "Task 3",
       "description": "Task 3 description",
@@ -77,22 +69,6 @@
       "id": 10,
       "title": "Task 10",
       "description": "Task 10 description",
-      "completed": false,
-      "upcoming": false,
-      "incomplete": true
-    },
-    {
-      "id": 11,
-      "title": "Task 11",
-      "description": "Task 11 description",
-      "completed": false,
-      "upcoming": false,
-      "incomplete": true
-    },
-    {
-      "id": 12,
-      "title": "Task 12",
-      "description": "Task 12 description",
       "completed": false,
       "upcoming": false,
       "incomplete": true
