@@ -37,4 +37,8 @@ export class TaskService {
   incompleteTask(id: number) {
     return this.http.put(`${this.url}/${id}/incomplete`, {});
   }
+
+  upcomingTask(id: number) {
+    return this.http.put(`${this.url}/${id}/upcoming`, {});
+  }
 }
